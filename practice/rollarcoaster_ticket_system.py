@@ -1,27 +1,29 @@
-print("Welcome to the rollercoaster!")
-height = int(input("What is your height in cm? "))
+# Complete Rollar Coaster in Console
+Height = int(input("What's your Height in CM? "))
 bill = 0
 
-if height >= 120:
-    print("You can ride the rollercoaster!")
-    age = int(input("What is your age? "))
-    if age < 12:
-        bill = 5
-        print("Child tickets are $5.")
+if Height >= 120:
+    print("You can ride the RollarCoaster!")
+    age = int(input("What's your age in Years? "))
+    if age <= 12:
+        bill = 6
+
     elif age <= 18:
-        bill = 7
-        print("Youth tickets are $7.")
-    elif age >= 45 and age <= 55:
-        print("Everything is going to be ok. Have a free ride on us!")
-    else:
+        bill = 10
+
+    elif age < 40:
         bill = 12
-        print("Adult tickets are $12.")
+    else:
+        bill = 13
 
-    wants_photo = input("Do you want a photo taken? Y or N. ")
-    if wants_photo == "Y":
-        bill += 3
-
-    print(f"Your final bill is ${bill}")
+    if age > 45 and age < 55:
+        print(f"You're getting a free ride!")
+    else:
+        photo = input("You want photo while riding? Y/n \n")
+        if photo == "Y":
+            print(f"Total ticket price is ${bill+3}.")
+        else:
+            print(f"Your ticket price is ${bill}.")
 
 else:
-    print("Sorry, you have to grow taller before you can ride.")
+    print("Can't ride")
