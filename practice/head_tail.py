@@ -1,4 +1,4 @@
-# c
+# It will randomly tell the user "Heads" or "Tails".
 # 1 means Heads & 0 means Tails
 import random
 
