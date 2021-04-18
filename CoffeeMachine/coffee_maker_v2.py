@@ -1,3 +1,5 @@
+# This is Coffee Maker Version 2
+
 MENU = {
     "espresso": {
         "ingredients": {
