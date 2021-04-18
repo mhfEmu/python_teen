@@ -105,3 +105,4 @@ while is_on:
             if is_transaction_successful(payment, drink["cost"]):
                 # TODO: 7: Make Coffee
                 make_coffee(choice, drink["ingredients"])
+# Program Ended
