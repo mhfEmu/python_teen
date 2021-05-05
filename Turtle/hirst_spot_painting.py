@@ -22,7 +22,8 @@ extracted_color = [(61, 103, 147), (224, 202, 110), (218, 146, 77), (126, 89, 62
                    (221, 206, 19), (137, 42, 35), (81, 65, 43), (52, 72, 65), (45, 67, 59), (14, 77, 111)]
 
 rip = t.Turtle()
-rip.shape("classic")
+# rip.shape("classic")
+rip.hideturtle()
 t.colormode(255)
 my_window = t.Screen()
 my_window.title("Hirst Spot Painting")
